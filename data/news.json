@@ -1,70 +1,695 @@
 {
   "articles": [
     {
-      "id": 1,
-      "title": "台積電 AI 晶片訂單暴增，CoWoS 封裝產能仍吃緊",
+      "id": 2540350012,
+      "title": "Delphi Doubles Down on Ellington Financial Stake with $8.7 Million Buy",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-17",
+      "category": "科技",
+      "summary": "Ellington Financial focuses on mortgage and consumer credit assets, leveraging structured finance to pursue stable income streams.",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "yahoo_finance",
+      "url": "https://www.fool.com/coverage/filings/2026/05/16/delphi-doubles-down-on-ellington-financial-stake-with-usd8-7-million-buy/?.tsrc=rss"
+    },
+    {
+      "id": 2168458272,
+      "title": "台積電增資6000億，美國半導體國家隊趕進度？財經作家：大客戶最在意2樣數據 - Yahoo新聞",
       "company": "台積電",
       "ticker": "2330",
       "date": "2026-05-16",
       "category": "半導體",
-      "summary": "受惠於 AI 伺服器需求持續爆發，台積電先進封裝 CoWoS 產能供不應求，客戶包含 NVIDIA、AMD 等大廠紛紛搶單，法人預估 2026 下半年營收將持續創高。",
-      "sentiment": "positive",
-      "tags": ["AI", "CoWoS", "先進封裝", "NVIDIA"]
+      "summary": "台積電增資6000億，美國半導體國家隊趕進度？財經作家：大客戶最在意2樣數據&nbsp;&nbsp;Yahoo新聞",
+      "sentiment": "neutral",
+      "tags": [
+        "半導體"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMixgNBVV95cUxPcU16dVVJTDFaNnE3SWVnV2lPMnk3ak9mNC03VEhZSVpNd0lJd2NGY0RtdlgyaUF4UndpV05DWHNBMDEzVlhTTlpKSzZwbmZaTVZ0SUoyLWdNX2xsd0R0Vm1HaExoYW5GR2xVREk0Sm9tZW5kb19yWGp2MmVLWWVoeDBuTTB1VncyTXBWVkpQNW9LaUdpdEwwWWxWQ05COC1QN3lSYjhqdjhrbUNEMExiMUhHc1dOM3l0MXFraGI0LWxHaWNXMXNxNjEtN1N3YTdHS0FxTGxBTFA0YU5xaXRQZkZRcTN6YWo2UTZuTjVPWk1kcnA2aGR1aVFKclJTT3NRZks5eVQ2MmlRaVZlOHZsT2VpUUJZLWlld0w1S2NnWU9MYXJ4SjN5ZFB5YlA4dEdzWGxFcDNXd3dQRldFMC04d0Zqb2NiZEpKUUVXS3ZkbnNlUjQ1WHU3SzFWUmJNWXE5ZUxHN1g4dHdhamh1SlRWT3RGakt4b2lZX1hSLUFRcUdpemZfSnJQVFVVUVdkZWNFMGF4X3NBVUVyYmdZOElNbkVnYmRZQ1RDWU1HWTBkYzJocFFEbGl4NzZxa3NycHE3N0hhVEtB?oc=5"
     },
     {
-      "id": 2,
-      "title": "聯發科天璣 9400 出貨遜預期，中國手機市場復甦力道疲軟",
-      "company": "聯發科",
+      "id": 2052892265,
+      "title": "廣達毛利為何輸鴻海、緯創？抓到4大兇手：被記憶卡蛙害的？2家投顧力挺買進- 上市櫃 - 旺得富理財網",
+      "company": "鴻海",
+      "ticker": "2317",
+      "date": "2026-05-16",
+      "category": "電子製造",
+      "summary": "廣達毛利為何輸鴻海、緯創？抓到4大兇手：被記憶卡蛙害的？2家投顧力挺買進- 上市櫃&nbsp;&nbsp;旺得富理財網",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BcGJ0LWIxV1hFS1lvUTI5RURHeTh1SnF0NHVhanNkMzJnN1ZKUUhGNW1aalJsU0w5UWNNN2ttRjlUcGlvelhISWRZZXdKWHFCWjBVR0VueExYZkcxdE51NXZ5MldXOGhRWmc?oc=5"
+    },
+    {
+      "id": 2631200193,
+      "title": "安聯台灣科技基金衝到 2,072 億之後，還能不能追？先看集中度，不要只看績效-林思齊 - CMoney投資網誌",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "安聯台灣科技基金衝到 2,072 億之後，還能不能追？先看集中度，不要只看績效-林思齊&nbsp;&nbsp;CMoney投資網誌",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8zLW1XY0NyZkRxbDlFRGNIQzJuQ1pKT0hzNkhOZFNaVHlXaVVTTGZsU2JlMGk4VEZjQlBFZ0lJd3VHN0dsTXBWS0Y1UjBZdXhZR0ItaUptMkZZY05oVU5LQVQ3Y01PUi1fYWFMelI1aXoySGtCRTh4YUpVYXQ2NFU?oc=5"
+    },
+    {
+      "id": 4196572077,
+      "title": "Wall Street Billionaires Make Amazon Their Top AI Trade",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "Bill Ackman, David Tepper, and other top investors lifted Amazon stakes sharply in Q1 2026 13F filings released May 15.",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://beincrypto.com/wall-street-billionaires-buying-amazon-stock/?.tsrc=rss"
+    },
+    {
+      "id": 2287697380,
+      "title": "Samsung будет использовать процессор Dimensity 9500. Вероятно, в планшетах",
+      "company": "MediaTek",
+      "ticker": "2454",
+      "date": "2026-05-16",
+      "category": "IC設計",
+      "summary": "Судя по данным, найденным в коде Samsung AI Core, южнокорейцы готовят устройство на базе процессора MediaTek Dimensity 9500. Прямых названий модели нет, но, скорее всего, речь идёт о новой серии планшетов Galaxy Tab S12. По крайней мере так считают С",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "newsapi",
+      "url": "https://www.ferra.ru/news/notebooks/samsung-budet-ispolzovat-processor-dimensity-9500-veroyatno-v-planshetakh-15-05-2026.htm"
+    },
+    {
+      "id": 2397589888,
+      "title": "ai-edge-litert-sdk-mediatek-nightly 2.2.0.dev20260515",
+      "company": "MediaTek",
+      "ticker": "2454",
+      "date": "2026-05-16",
+      "category": "IC設計",
+      "summary": "MediaTek NeuroPilot SDK for AI Edge LiteRT",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "newsapi",
+      "url": "https://pypi.org/project/ai-edge-litert-sdk-mediatek-nightly/2.2.0.dev20260515/"
+    },
+    {
+      "id": 3464170319,
+      "title": "【速報】TSMC熊本工場が初の黒字化",
+      "company": "TSMC",
+      "ticker": "2330",
+      "date": "2026-05-16",
+      "category": "半導體",
+      "summary": "【台北共同】台湾積体電路製造（TSMC）は、熊本工場（熊本県菊陽町）を運営する子会社JASMが今年1～3月期に黒字になったと発表した。中央通信社が16日報じた。同工場での量産開始以降、初めて黒字に転 ...",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://www.47news.jp/14311251.html"
+    },
+    {
+      "id": 1262180680,
+      "title": "Камеры 200 и 50 Мп, зум 30х, батарея 8600 мАч, экран 120 Гц и 8000 нит и IP69. Смартфоны Honor 600 будут очень разными в рамках одной линейки в Китае",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "Они сильно отличаются цветов и фактурой",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://www.ixbt.com/news/2026/05/16/200-50-30-8600-120-8000-ip69-honor-600.html"
+    },
+    {
+      "id": 1264883591,
+      "title": "Какой планшет купить в 2026-м на Onlíner?",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "Планшет — самое удачное устройство для досуга, которое только можно придумать. Большой сенсорный дисплей, созданный для потребления контента, гейминга и просмотра видео. Но как поступить правильно: не ошибиться в процессоре, выбрать действительно соч",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://tech.onliner.by/2026/05/16/top-planshetov"
+    },
+    {
+      "id": 4021071587,
+      "title": "Foxconn'dan üretimi Vietnam'dan Kağıthane'ye taşıma kararı",
+      "company": "Foxconn",
+      "ticker": "2317",
+      "date": "2026-05-16",
+      "category": "電子製造",
+      "summary": "Apple'ın da üreticisi konumundaki teknoloji devi Foxconn, General Mobile ile stratejik ortaklığa giderek üretimini Vietnam'dan Kağıthane'ye taşıyacak. Bu dev hamleyle Türkiye, 5G ve akıllı telefon üretiminde Avrupa'nın yeni üssü olacak.",
+      "sentiment": "neutral",
+      "tags": [
+        "5G",
+        "Apple"
+      ],
+      "source": "newsapi",
+      "url": "https://www.haber7.com/teknoloji/haber/3628288-foxconndan-uretimi-vietnamdan-kagithaneye-tasima-karari"
+    },
+    {
+      "id": 1124137690,
+      "title": "台積電海外產能收割期！美廠首季獲利破188億、日廠首度轉盈",
+      "company": "台積電",
+      "ticker": "2330",
+      "date": "2026-05-16",
+      "category": "半導體",
+      "summary": "台積電海外產能收割期！美廠首季獲利破188億、日廠首度轉盈",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B5%B7%E5%A4%96%E7%94%A2%E8%83%BD%E6%94%B6%E5%89%B2%E6%9C%9F-%E7%BE%8E%E5%BB%A0%E9%A6%96%E5%AD%A3%E7%8D%B2%E5%88%A9%E7%A0%B4188%E5%84%84-%E6%97%A5%E5%BB%A0%E9%A6%96%E5%BA%A6%E8%BD%89%E7%9B%88-112100134.html"
+    },
+    {
+      "id": 3361012875,
+      "title": "「魏哲家同款鞋開賣了！」台積電5大爆款預購：員工都想要 均一價太佛心",
+      "company": "台積電",
+      "ticker": "2330",
+      "date": "2026-05-16",
+      "category": "半導體",
+      "summary": "去年台積電運動會上，董事長魏哲家腳踩的那雙神祕「tsmc專屬運動鞋」，今年員工終於能一圓收藏夢！台積電福委會推出最新「六選一」自費禮品，均一價 2200 元被讚爆「太佛心」，除了董事長同款鞋引發暴動，融入專屬電路圖騰的「台積電聯名大同電鍋」更承襲了去年行李箱的爆紅基因，還沒出貨就在網路賣場被瘋狂喊價到 9999 元天價。",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://tw.stock.yahoo.com/news/%E9%AD%8F%E5%93%B2%E5%AE%B6%E5%90%8C%E6%AC%BE%E9%9E%8B%E9%96%8B%E8%B3%A3%E4%BA%86-%E5%8F%B0%E7%A9%8D%E9%9B%BB5%E5%A4%A7%E7%88%86%E6%AC%BE%E9%A0%90%E8%B3%BC-%E5%93%A1%E5%B7%A5%E9%83%BD%E6%83%B3%E8%A6%81-%E5%9D%87-%E5%83%B9%E5%A4%AA%E4%BD%9B%E5%BF%83-020031453.html"
+    },
+    {
+      "id": 3099721753,
+      "title": "Apple Loop: iPhone 18 Pro Pricing, More MacBook Neo On Sale, Bluey Invades Your iPhone",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "his week’s Apple headlines: Taking a look back at this week’s news and headlines from across the Apple world, including iPhone 18 Pro pricing, iPhone 17 US success, more MacBook Neo laptops, macOS 27 will look better, Bluey is going to take over your",
+      "sentiment": "neutral",
+      "tags": [
+        "Apple"
+      ],
+      "source": "newsapi",
+      "url": "https://www.forbes.com/sites/ewanspence/2026/05/15/apple-news-headlines-iphone-18-pro-price-macbook-neo-sale-bluey-apple-arcade/"
+    },
+    {
+      "id": 1948606947,
+      "title": "Taiwan semiconductor materials, April 2026— One sector, two races",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "Among the 19 Taiwan-listed semiconductor materials companies tracked by Digitimes, 10 (53%) grew month-on-month in April, 12 (63%) posted positive year-on-year growth, and 14 (74%) are ahead on a cumulative January–April basis. On the surface, those ",
+      "sentiment": "positive",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://www.digitimes.com/news/a20260514VL208/materials-demand-growth-packaging-revenue.html"
+    },
+    {
+      "id": 1366711697,
+      "title": "Is this one of the best Vanguard ETFs to buy now?",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-16",
+      "category": "科技",
+      "summary": "Instead of trying to pick one tech winner, this fund gives investors access to a basket of global leaders across AI, chips, software, and cloud.\nThe post Is this one of the best Vanguard ETFs to buy now? appeared first on The Motley Fool Australia.",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "newsapi",
+      "url": "https://www.fool.com.au/2026/05/16/is-this-one-of-the-best-vanguard-etfs-to-buy-now/"
+    },
+    {
+      "id": 3477331209,
+      "title": "看好 AI 伺服器與 800G 交換器爆發成長，大摩升鴻海目標價至 310 元 - TechNews 科技新報",
+      "company": "鴻海",
+      "ticker": "2317",
+      "date": "2026-05-15",
+      "category": "電子製造",
+      "summary": "看好 AI 伺服器與 800G 交換器爆發成長，大摩升鴻海目標價至 310 元&nbsp;&nbsp;TechNews 科技新報",
+      "sentiment": "positive",
+      "tags": [
+        "AI",
+        "伺服器"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NSGxSMWt5VG41cXZEajVCOXQ2Nl9lTXc2cHBYQmtGcGxhMS1odnpCNXlHcGduNWxTM1JwMEpBc0sxRlJ0cTNKeTdOYndVM0dnelZCOVE2SDZhRWhBTTE0UFZzeE0tSVpvVDlsZENlOGdiVFZBb3dURg?oc=5"
+    },
+    {
+      "id": 4294674664,
+      "title": "八檔台股 ETF 大換血 00881、00900等調整成分股今起生效 - 經濟日報",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-15",
+      "category": "科技",
+      "summary": "八檔台股 ETF 大換血 00881、00900等調整成分股今起生效&nbsp;&nbsp;經濟日報",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtMmpweXViUU9RSmlEQU92VFREc2lSWGJMUWtvQkJUY3dVSVo0TXJZUnZ4cTM3SkNuOGs4MmdHVGE4dmNZc1VTZGd6QWdZS3RQU2FaZU5EY2lyUdIBX0FVX3lxTE45akRYaFNHblRhallsbGlXdHkyTlZCQUJPeGVpNlEzcUlQN1pwekVFU1ZaWEJWcWhLcHo2cHI2Ym1wUnY0X05kODhTSGRwZ241eHE2OGI4TWNtVFBzVjdV?oc=5"
+    },
+    {
+      "id": 1226584662,
+      "title": "台積電張曉強：半導體成長動能從手機轉向AI，「COUPE」將成關鍵字 - 加密城市CryptoCity",
+      "company": "台積電",
+      "ticker": "2330",
+      "date": "2026-05-15",
+      "category": "半導體",
+      "summary": "台積電張曉強：半導體成長動能從手機轉向AI，「COUPE」將成關鍵字&nbsp;&nbsp;加密城市CryptoCity",
+      "sentiment": "positive",
+      "tags": [
+        "AI",
+        "半導體"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZNHBlRjZWNE93anpyanIzLWVKcjYxRWpwTjQtdzdoV0tla0ZqMzJzQk8xN0EwVkpkUzFOZEYxLURrNzBJUkNVMDV0M1FxYU5QRlNydjBPTlVRX3RWMUFVeVdPdXBjdmVkNFoyeHJ3T3lDZw?oc=5"
+    },
+    {
+      "id": 2615589070,
+      "title": "台灣AI經濟仰賴晶片業，專家示警泡沫風險與地緣政治威脅 - 樂聯網",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-15",
+      "category": "科技",
+      "summary": "台灣AI經濟仰賴晶片業，專家示警泡沫風險與地緣政治威脅&nbsp;&nbsp;樂聯網",
+      "sentiment": "neutral",
+      "tags": [
+        "AI",
+        "晶片"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1FRldCR0hEaFJ0bFI1YkhPOEZYNG1teXJwTUU0a1hwZ2oyVzJwcDJ0Q3J0MXIxSnBxY1FjZWJwSkoxajVpdkJsUHhFbw?oc=5"
+    },
+    {
+      "id": 3947845441,
+      "title": "200 亿美元追加到位，台积电美国 Fab 21 半导体工厂扩产再提速",
+      "company": "TSMC",
+      "ticker": "2330",
+      "date": "2026-05-15",
+      "category": "半導體",
+      "summary": "IT之家 5 月 16 日消息，科技媒体 Appleinsider 昨日（5 月 15 日）发布博文，报道称台积电（TSMC）再向美国亚利桑那州 Fab 21 工厂追加 200 亿美元（IT之家注：现汇率约合 1360.32 亿元人民币）投资。本轮投资覆盖采购土地、昂贵的 EUV（极紫外）光刻设备，以及更多半导体制造设备，表明这座美国晶圆厂仍处在持续扩张阶段。从工厂规模看，Fab 21 总面积约 350 万平方英尺，占地超过 1100 英亩。消息称这座工厂已在生产 4 纳米晶圆，规模约为 9 万",
+      "sentiment": "neutral",
+      "tags": [
+        "Apple"
+      ],
+      "source": "newsapi",
+      "url": "https://www.ithome.com/0/951/157.htm"
+    },
+    {
+      "id": 3340573112,
+      "title": "ai-edge-litert-sdk-mediatek 2.1.5",
+      "company": "MediaTek",
       "ticker": "2454",
       "date": "2026-05-15",
       "category": "IC設計",
-      "summary": "聯發科旗艦晶片天璣 9400 因中國消費市場回溫速度不如預期，第二季出貨量下修約 8%，管理層表示將持續布局 AI 手機功能以刺激換機需求。",
-      "sentiment": "negative",
-      "tags": ["手機晶片", "中國市場", "AI手機"]
+      "summary": "MediaTek NeuroPilot SDK for AI Edge LiteRT",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "newsapi",
+      "url": "https://pypi.org/project/ai-edge-litert-sdk-mediatek/2.1.5/"
     },
     {
-      "id": 3,
-      "title": "鴻海與 NVIDIA 深化合作，在台建立 GB200 伺服器組裝廠",
+      "id": 3519956434,
+      "title": "20 valores impulsados por la IA",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-15",
+      "category": "科技",
+      "summary": "El auge de la Inteligencia Artificial impulsa el Nasdaq a récord. Diez valores americanos, entre los que están Nvidia y Alphabet, junto a otros menos conocidos, suben con fuerza y tienen potencial de revalorización. Merlin, ACS, Solaria, Grenergy y E",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://www.expansion.com/mercados/2026/05/16/6a077d10468aeb096c8b458a.html"
+    },
+    {
+      "id": 2708639757,
+      "title": "Kuo: Apple is testing iPhone chipset production at Intel",
+      "company": "TSMC",
+      "ticker": "2330",
+      "date": "2026-05-15",
+      "category": "半導體",
+      "summary": "Earlier this month, we saw a report which claimed that Apple is looking to diversify its chip production away from TSMC with Intel and Samsung as potential partners. Noted Apple analyst Ming Chi-Kuo’s latest post also backs up these claims alongside ",
+      "sentiment": "neutral",
+      "tags": [
+        "Apple"
+      ],
+      "source": "newsapi",
+      "url": "https://www.gsmarena.com/kuo_apple_is_testing_iphone_chipset_production_at_intel-news-72836.php"
+    },
+    {
+      "id": 1582406391,
+      "title": "台積電增資6000億，美國半導體國家隊趕進度？財經作家：大客戶最在意2樣數據",
+      "company": "台積電",
+      "ticker": "2330",
+      "date": "2026-05-15",
+      "category": "半導體",
+      "summary": "AI浪潮持續發威，近年國際地緣政治動盪，而近日全球半導體供應鏈也傳出震撼消息，美國半導體大廠英特爾（Intel）傳出已與蘋果（Apple）達成合作協議；當外界關注英特爾此舉，是否將對晶圓代工龍頭台積電（2330）造成衝擊之際，台積電拍板再增資200億美元（約新台幣6100億元）美國亞利桑那廠。對此，財經作家游庭皓15日在臉書粉專中指出，如今美國半導體國家隊，......",
+      "sentiment": "neutral",
+      "tags": [
+        "AI",
+        "半導體",
+        "Apple"
+      ],
+      "source": "newsapi",
+      "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%A2%9E%E8%B3%876000%E5%84%84-%E7%BE%8E%E5%9C%8B%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%9C%8B%E5%AE%B6%E9%9A%8A%E8%B6%95%E9%80%B2%E5%BA%A6-%E8%B2%A1%E7%B6%93%E4%BD%9C%E5%AE%B6-%E5%A4%A7%E5%AE%A2%E6%88%B6%E6%9C%80%E5%9C%A8%E6%84%8F2%E6%A8%A3%E6%95%B8%E6%93%9A-053007206.html"
+    },
+    {
+      "id": 1928213183,
+      "title": "Optical stocks are booming. Here’s how to invest in one of the most explosive areas of tech.",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-15",
+      "category": "科技",
+      "summary": "Investors are pouring money quickly into a new ETF that invests in companies involved with photonics and photolithography.",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://www.marketwatch.com/story/optical-stocks-are-booming-heres-how-to-invest-in-one-of-the-most-explosive-areas-of-tech-13374178"
+    },
+    {
+      "id": 917748320,
+      "title": "Intel’in Yeni Teknolojisi TSMC’yi Tehdit Edebilir mi?",
+      "company": "TSMC",
+      "ticker": "2330",
+      "date": "2026-05-15",
+      "category": "半導體",
+      "summary": "Citibank raporuna göre TSMC, yapay zeka çip üretimindeki liderliğini koruyor. Intel'in EMIB-T teknolojisi ise hammadde kısıtlamalarıyla karşı karşıya.",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://shiftdelete.net/intelin-yeni-teknolojisi-tsmcyi-tehdit-edebilir-mi"
+    },
+    {
+      "id": 2824389848,
+      "title": "Самолеты Boeing и видеокарты для ИИ: США заключили соглашения с Пекином",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-15",
+      "category": "科技",
+      "summary": "Во время своего визита в Китай президент США заявил, что Пекин купит у Штатов 200 самолетов Boeng. А еще стало известно, что американцы дали добро на продажу мощных видеокарт для ШИ от компании Nvidia.",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "newsapi",
+      "url": "https://news.finance.ua/ru/samolety-boeing-i-videokarty-dlya-ii-ssha-zaklyuchili-soglasheniya-s-pekinom"
+    },
+    {
+      "id": 184329610,
+      "title": "What you need to know about Nvidia competitor Cerebras after wild IPO",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-15",
+      "category": "科技",
+      "summary": "Nvidia competitor Cerebras made a stunning debut on Wall Street Thursday, signaling unstoppable demand for AI chips. Here's how its chips compete with Nvidia's.",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "newsapi",
+      "url": "https://www.cnbc.com/2026/05/15/nvidia-cerebras-stock-price-ipo.html"
+    },
+    {
+      "id": 3869029986,
+      "title": "台積電技術論壇》半導體新戰局！台積十年AI藍圖 「從2奈米到全光互連」6大重點一次看- 產業 - 工商時報",
+      "company": "台積電",
+      "ticker": "2330",
+      "date": "2026-05-14",
+      "category": "半導體",
+      "summary": "台積電技術論壇》半導體新戰局！台積十年AI藍圖 「從2奈米到全光互連」6大重點一次看- 產業&nbsp;&nbsp;工商時報台積電矽光子大進擊 今年量產 預告「COUPE」將成下一個半導體關鍵字&nbsp;&nbsp;經濟日報「半導體黃金時代才剛開始！」 台積電張曉強：2030年產值帶動全球150兆美元GDP&nbsp;&nbsp;Yahoo股市「COUPE」是什麼？為什麼被台積電點名下一個關鍵技術？&nbsp;&nbsp;數位時代台積電發威！估2030半導體產值衝1.5兆美元 最新焦點曝&nb",
+      "sentiment": "positive",
+      "tags": [
+        "AI",
+        "先進封裝",
+        "半導體"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Fd2Y5S2M5c1hKZzZJVnp2Skt5TUJxQWlfdjBFRUxKU2lkZlNiSFpsNzEyUjR2ckxpZGJwZnFNWHVERUFvcFctQ1RjdEExWmZCWlJiWkhZSGJBbTJLWnpV?oc=5"
+    },
+    {
+      "id": 431095196,
+      "title": "聯發科集團子公司有哪些？集團發展方向？現況？ - StockFeel 股感",
+      "company": "聯發科",
+      "ticker": "2454",
+      "date": "2026-05-14",
+      "category": "IC設計",
+      "summary": "聯發科集團子公司有哪些？集團發展方向？現況？&nbsp;&nbsp;StockFeel 股感",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOOGZ6Z3ZmbGdzUERWTmZjaDV5cUwteUxKTzJyNFZDWWkxTWlpc2dBajlwTVNxS3NiNHFORktPazZDZWhzb3lUUlpLZThjWENCbWh6VmFYNkl0VjhnQ05CdWpJZ1lHNG9ocExabjQwZW1BR2dUeG5hclJoWml4dFJhQ0hMWVkzS1ltWHY1alNoZ21QN3ZJNGYxdG15MW5ic2hvUWFhcVV5S0tWNFdUMzh5UEwydmVmbmw4ZHVRZndiSDNzZDQ3THhIZG1ETkJKRzVoazhRN2hOSFgyZmtPcVpoVVpGQTdVTXgyWWR6Q1pyU1dLTE1sU0V2Umd6ckE5SWNuajRhVXU4ajkybTZQZGhLeUhTa0ZHQ1NuWHdWWGE2dDg4VzI4VFI1LU85TV8zWGtqdXNnUV9ZREllOThPU3BPemg0TFFiVlRmNEE?oc=5"
+    },
+    {
+      "id": 3298309172,
+      "title": "Googlebook 合作夥伴出列，英特爾、高通、聯發科提供運算動力 - TechNews 科技新報",
+      "company": "聯發科",
+      "ticker": "2454",
+      "date": "2026-05-14",
+      "category": "IC設計",
+      "summary": "Googlebook 合作夥伴出列，英特爾、高通、聯發科提供運算動力&nbsp;&nbsp;TechNews 科技新報",
+      "sentiment": "neutral",
+      "tags": [
+        "Google"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT2NKWXRGWFFzVWtISjV1cG54b2g4a29iZVJyZWQwY0pFVWZEcnA5RGhUX0w4a1BUQnM0MmRnZnRxRzBkLVhUN1RydkRUUklGUm9FSHBSRVFkZE9ETC1tVV9BZWQ5Smx1TWQ5dElhUUtLRURqUVJUSEdEcEl2VnROelhpd2pGODRLZl9QdjJKelNfdzRSZWRBMDg1X01sWHA3Q2VfSw?oc=5"
+    },
+    {
+      "id": 58064814,
+      "title": "（鴻海1Q26法說）鴻海AI伺服器市佔約4成 GPU/ASIC雙線推升全年出貨倍增 - DIGITIMES",
       "company": "鴻海",
       "ticker": "2317",
       "date": "2026-05-14",
-      "category": "伺服器",
-      "summary": "鴻海宣布將在台灣擴建 AI 伺服器組裝產線，與 NVIDIA 合作生產 GB200 NVL72 機架，預計 Q3 量產，此舉將帶動相關供應鏈訂單能見度提升至年底。",
-      "sentiment": "positive",
-      "tags": ["AI伺服器", "NVIDIA", "GB200", "供應鏈"]
-    },
-    {
-      "id": 4,
-      "title": "台達電儲能系統接單創高，歐美電網升級帶動需求",
-      "company": "台達電",
-      "ticker": "2308",
-      "date": "2026-05-13",
-      "category": "電力電子",
-      "summary": "台達電工業自動化與能源基礎設施部門訂單能見度延伸至 2027 年，歐洲電網現代化政策推升大型儲能需求，毛利率有望持續改善。",
-      "sentiment": "positive",
-      "tags": ["儲能", "電網", "能源轉型"]
-    },
-    {
-      "id": 5,
-      "title": "友達、群創面板報價持平，TV 需求旺季效應有限",
-      "company": "友達",
-      "ticker": "2409",
-      "date": "2026-05-12",
-      "category": "面板",
-      "summary": "6 月面板報價維持持平，品牌客戶備貨意願保守，旺季拉貨力道弱於往年，雙虎毛利率承壓，下半年能否回升仍待觀察。",
+      "category": "電子製造",
+      "summary": "（鴻海1Q26法說）鴻海AI伺服器市佔約4成 GPU/ASIC雙線推升全年出貨倍增&nbsp;&nbsp;DIGITIMES",
       "sentiment": "neutral",
-      "tags": ["面板", "TV", "報價"]
+      "tags": [
+        "AI",
+        "伺服器"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT01Bd3haRy1pajhxZGlfelRJZE5BaXowZVFJcDFtbnpUcGlXdk1YYmtqajRNYncyQjFmZ3Vrc0g0YTIyb2JfaFJvVWdzTGx6Z3UxdXRKQzhUVDRjTzVLUVNISkZvUzJYaFF3enVacGtubFNuLXEtTEllMFg1OEdkSXJScVp1T3hmTHNJVE1R?oc=5"
     },
     {
-      "id": 6,
-      "title": "廣達雲端伺服器出貨量 Q2 季增 30%，AI 基礎建設需求強勁",
-      "company": "廣達",
-      "ticker": "2382",
-      "date": "2026-05-11",
-      "category": "伺服器",
-      "summary": "廣達電腦 AI 伺服器出貨量大幅成長，主要客戶微軟、Google 資本支出持續擴張，帶動廣達 Q2 營收季增約三成，全年獲利預期上修。",
+      "id": 55841666,
+      "title": "《TAIPEI TIMES》TSMC expects global chip revenue to hit US$1.5tn - 自由時報",
+      "company": "TSMC",
+      "ticker": "2330",
+      "date": "2026-05-14",
+      "category": "半導體",
+      "summary": "《TAIPEI TIMES》TSMC expects global chip revenue to hit US$1.5tn&nbsp;&nbsp;自由時報",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tak5DUDcxSGFITU02VC1NeXhhUlJ6dzU2UmQ4VklaWGlhaWd0YXFHWEVUZVNZUVlMMk5lLTBKVU1OWUh3TWpkRnZReWZFY0JUM21pNDg5N2w2OWFobnpJYW02R0lpd9IBa0FVX3lxTE16Zm9EVmFwUkVOaUp0dnFKNV9UbnNZUE81Vkp4ckd4b011VVdISUljMW95LTIzdXZwTmNsRWVHOGloMU44QzJZMVdHV1NMYjQ5YmR3YTN1ek5nZEc5R3Nucl83V1N6UmgzRGZR?oc=5"
+    },
+    {
+      "id": 2339638815,
+      "title": "【22:35 即時新聞】Taiwan Semiconductor Manufacturing (TSM) 勁揚5%／受惠亞太避險基金加碼與AI晶片長線題材 - CMoney投資網誌",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-14",
+      "category": "科技",
+      "summary": "【22:35 即時新聞】Taiwan Semiconductor Manufacturing (TSM) 勁揚5%／受惠亞太避險基金加碼與AI晶片長線題材&nbsp;&nbsp;CMoney投資網誌",
+      "sentiment": "neutral",
+      "tags": [
+        "AI",
+        "晶片"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOXVOZWprcjh2NnlHRmV5aVUwNXV4NzBiREc4WVJqOG5scnpVXzV4SHVGY2JTU1RnbWpwSmFBOGplTi1aLVhJTUFkdDA0SDBfZTZfaWowc0lKcl9xbVB3cVJvWTRRS3l5OFV4aVlZR19aMGlOeFVZU05Td2k2SVpOUkJqNVVTOEo1U2I4ZVB3?oc=5"
+    },
+    {
+      "id": 167682537,
+      "title": "NVIDIA Wins. America Loses",
+      "company": "Foxconn",
+      "ticker": "2317",
+      "date": "2026-05-14",
+      "category": "電子製造",
+      "summary": "On the eve of the Trump-Xi summit in Beijing, the United States quietly cleared roughly 10 Chinese firms, including Alibaba, Tencent, ByteDance, and JD.com, to buy NVIDIA’s H200 accelerators, with Lenovo and Foxconn approved as distributors. NVIDIA (",
+      "sentiment": "neutral",
+      "tags": [
+        "NVIDIA"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://247wallst.com/investing/2026/05/14/nvidia-wins-america-loses/?.tsrc=rss"
+    },
+    {
+      "id": 3179923581,
+      "title": "NVIDIA Stock Hits Record as CEO Calls Trump China Visit ‘Most Important in Human History’",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-14",
+      "category": "科技",
+      "summary": "NVIDIA stock hit a record $236.46 on the CEO's latest remarks & after Washington cleared H200 chip sales to Alibaba, Tencent, ByteDance & JD.com.",
       "sentiment": "positive",
-      "tags": ["AI伺服器", "雲端", "Microsoft", "Google"]
+      "tags": [
+        "NVIDIA"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://beincrypto.com/nvidia-stock-record-trump-china-summit/?.tsrc=rss"
+    },
+    {
+      "id": 2814678242,
+      "title": "台積供不應求外溢效應 台供鏈上修成長 - 自由財經",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-13",
+      "category": "科技",
+      "summary": "台積供不應求外溢效應 台供鏈上修成長&nbsp;&nbsp;自由財經",
+      "sentiment": "positive",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaQm1RRkQ1RnJ6OGlYYlpqWjhhZGg5OTFpTnBMZnl2ckw1NTlNcnQ1MEpFR3czaVdjWXBZbmFkZ3lIREJZbVJuNVVQNjdGYklMZnh6RS1B0gFbQVVfeXFMTjJmNVRrb0RhVGdGRDdHUFY0QXdBTXRHTktCSl9BRnhFTHFKUFU4MkFQOXZKMDJ2WmJQVUZ1RUxZRF9JY0ZQMy02cC0xbkZGeEs3WW9Na1ZIeXdJRQ?oc=5"
+    },
+    {
+      "id": 2305593941,
+      "title": "大行情要來了？ 大摩爆料：全球大戶正狂買台灣科技股 - Yahoo股市",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-12",
+      "category": "科技",
+      "summary": "大行情要來了？ 大摩爆料：全球大戶正狂買台灣科技股&nbsp;&nbsp;Yahoo股市",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMi_AJBVV95cUxOeFFYYlhBNUVCSDRHcjNRQnp4OFZkcWFvZnlrbDVuRjNTdWg5c3d6NFo4RU41TXlzRndOWDN4M3FnN0tlR1VJRGwtbzh4WGhJX05GeHNfMWxySTdLR201TjNxNGhaQ1JVc0daUUhiT1hhZmVBZmxpMVBqZDcwZDl1ZmtsVDhPYXIwLTBrcEdCeVFxYVZhYl8xWU1VcUk5dVJyLV96NGMxbXEwcFo2VU9ieE1RZl9uX1lIYXhzWnZNSHhEaC04c2djLVRQUU1EcUtDaEZKUnMzUVZSc1Bkc3lYMnI3YVphSGlzSW9xY3BWc1BQei1memhKVjVGUGhHN1hOMnpud19wSk04TE14cGdRN1JWRm1TWEVidHVKU011TExtTi03STJSdG5pdWE0cWtQZ0c2SlVRNWtmNzZmdDA1ZlFVbW9VSWJ1MmF6dFRHX3JrVlRKdTB0emRLVEQ2RS1oOHI0My1mWHJDQ2o1VXhxYnhSVzNZU3FQY0piaQ?oc=5"
+    },
+    {
+      "id": 3571122612,
+      "title": "高盛報告：AI 晶片超級利潤使台灣經常帳飆破 GDP 20％，將迫使央行升息 - 動區動趨",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-12",
+      "category": "科技",
+      "summary": "高盛報告：AI 晶片超級利潤使台灣經常帳飆破 GDP 20％，將迫使央行升息&nbsp;&nbsp;動區動趨",
+      "sentiment": "neutral",
+      "tags": [
+        "AI",
+        "晶片"
+      ],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLThNWGw2dzMyUi0wZzVhQ19RanlOTTVvOWNPYWEwQ3lIdjZ6WVVjVTBHdUpfY2lwdFdMNG9aUGdIT2I5Njhrb3pYTGUwQ2lpRUNmZGk2b3RwS1ViS09tenV3NUJKakl6eTFiVnZFOFlKSXMySi1USHVXRWZ2TnVUSnZ6TGN2UnlqcXVZNkxiTQ?oc=5"
+    },
+    {
+      "id": 2563561838,
+      "title": "IC設計大爆發！「這檔」連6漲40.5%攜華邦電等16檔漲停 聯發科、創意、世芯全創高 - Yahoo股市",
+      "company": "聯發科",
+      "ticker": "2454",
+      "date": "2026-05-11",
+      "category": "IC設計",
+      "summary": "IC設計大爆發！「這檔」連6漲40.5%攜華邦電等16檔漲停 聯發科、創意、世芯全創高&nbsp;&nbsp;Yahoo股市",
+      "sentiment": "positive",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNaHBpTkduZ0VnN2Z6eDI1b25yQUNRYm9hbTAyZHRmUE9FcS1TTy1xN0FSQUg1SElrdndhaXBHMFNITjVCTUdmbFUySmdQTGJiMVA5WUQ3d1R3YnI2azNhazZPV25UYUQxZmZJVklrNXh6RTBvX2RSeUE1SVZ5dWF3bWxScnp6N1hVb1V1TEhkNEVacjNnN2ttZGJNVTRabVFNZEozTXlUN09EZ3ZhSDBsUXBIeEVrLU5wMmlEWTJrbFdFbnlpUmloeVlWaVViR0NWVkVrUjVYSnJkY3VWUTg5S1FMYnA4T1V1S201d25HTHdhdnN0ZHd4N0dLZFFoRk43Ui1kcFprWFR4S0VyaXU0WklUaXFiWjNVNFJwN1FESHQ4bHNEVTZEc2hYa1QycU1KakJKWEozOA?oc=5"
+    },
+    {
+      "id": 2783921932,
+      "title": "Global Supply Chain Alliances Take Shape as Micro LED CPO Optical Transceiver Market Projected to Reach US$848 Million by 2030, Says TrendForce",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-05-11",
+      "category": "科技",
+      "summary": "TAPEI, Taiwan, May 11, 2026 (GLOBE NEWSWIRE) -- TrendForce’s latest research into the Micro LED industry highlights how generative AI is driving rapid growth in demand for high-speed optical communications. Micro LED technology offers power consumpti",
+      "sentiment": "positive",
+      "tags": [
+        "AI"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/global-supply-chain-alliances-shape-123000201.html?.tsrc=rss"
+    },
+    {
+      "id": 1973070142,
+      "title": "Delta Thailand Included in Dow Jones Best-in-Class Indices 2026 for the Fifth Consecutive Year",
+      "company": "Delta Electronics",
+      "ticker": "2308",
+      "date": "2026-05-11",
+      "category": "電力電子",
+      "summary": "Delta Electronics (Thailand) Public Company Limited, a global leader in power management and smart green solutions has been included in the Dow Jones Best-in-Class Indices (DJ BIC, formerly DJSI) for the fifth consecutive year since 2021. The recogni",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "yahoo_finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/delta-thailand-included-dow-jones-081100010.html?.tsrc=rss"
+    },
+    {
+      "id": 151426596,
+      "title": "Arm Is Quietly Becoming The CPU Backbone Of AI",
+      "company": "MediaTek",
+      "ticker": "2454",
+      "date": "2026-05-08",
+      "category": "IC設計",
+      "summary": "Introduction Over more than three decades, Arm evolved into a leading CPU architecture supplier for smartphones and embedded devices, licensing CPU architectures and core designs to customers such as Apple (AAPL), Qualcomm (QCOM), Nvidia (NVDA), Sams",
+      "sentiment": "neutral",
+      "tags": [
+        "AI",
+        "Apple"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://247wallst.com/investing/2026/05/08/arm-is-quietly-becoming-the-cpu-backbone-of-ai/?.tsrc=rss"
+    },
+    {
+      "id": 2014618513,
+      "title": "Delta Electronics Spotlights AI and Integrated Solutions to Advance Semiconductor Packaging at SEMICON Southeast Asia 2026",
+      "company": "Delta Electronics",
+      "ticker": "2308",
+      "date": "2026-05-05",
+      "category": "電力電子",
+      "summary": "Delta Electronics, a global leader in power management and smart green solutions, attends SEMICON Southeast Asia 2026 to present its cutting-edge smart manufacturing solutions with AI playing a central role in enabling smarter, more connected, advanc",
+      "sentiment": "neutral",
+      "tags": [
+        "AI"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/delta-electronics-spotlights-ai-integrated-090000265.html?.tsrc=rss"
+    },
+    {
+      "id": 2754286333,
+      "title": "Vuzix Reports 2025 Financial Results and Positions Waveguide and OEM Businesses for Next Phase of Smart Glasses Growth",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-03-12",
+      "category": "科技",
+      "summary": "Vuzix® Corporation (NASDAQ: VUZI) (\"Vuzix\" or the \"Company\"), a leading supplier of AI-driven smart glasses, waveguides and Augmented Reality (AR) technologies, today reported its fourth quarter and full year financial results for the year ended Dece",
+      "sentiment": "positive",
+      "tags": [
+        "AI"
+      ],
+      "source": "yahoo_finance",
+      "url": "https://finance.yahoo.com/news/vuzix-reports-2025-financial-results-202500135.html?.tsrc=rss"
+    },
+    {
+      "id": 1199924451,
+      "title": "TSMC to hire 8,000 workers in 2026|English News - 僑務電子報",
+      "company": "TSMC",
+      "ticker": "2330",
+      "date": "2026-03-09",
+      "category": "半導體",
+      "summary": "TSMC to hire 8,000 workers in 2026|English News&nbsp;&nbsp;僑務電子報",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "google_news",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB2RmI0d1d3SVQ5d0tWS0RfMFVUem5iVHEyR0hDZzJ5QmN3UGRjTk9kaW5mb3QxcFFpMjFPYnprelBBVlgwaUZ6VzJSRQ?oc=5"
+    },
+    {
+      "id": 241505064,
+      "title": "Rigetti Computing Reports Fourth Quarter and Full-Year 2025 Financial Results",
+      "company": "台灣科技業",
+      "ticker": "-",
+      "date": "2026-03-04",
+      "category": "科技",
+      "summary": "Demonstrates 99.9% two-qubit gate fidelity at 28 nanosecond gate speed on prototype platformBERKELEY, Calif., March 04, 2026 (GLOBE NEWSWIRE) -- Rigetti Computing, Inc. (Nasdaq: RGTI) (“Rigetti” or the “Company”), a pioneer in full-stack quantum-clas",
+      "sentiment": "neutral",
+      "tags": [],
+      "source": "yahoo_finance",
+      "url": "https://finance.yahoo.com/news/rigetti-computing-reports-fourth-quarter-210500701.html?.tsrc=rss"
     }
-  ]
+  ],
+  "updated_at": "2026-05-17T06:10:34.238220+00:00"
 }

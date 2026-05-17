@@ -1,9 +1,13 @@
 import json
 import os
 from flask import Flask, render_template, jsonify, abort
+from apscheduler.schedulers.background import BackgroundScheduler
+from dotenv import load_dotenv
+from fetcher import update_news_data
+
+load_dotenv()
 
 app = Flask(__name__)
-
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data", "news.json")
 
 
@@ -19,8 +23,7 @@ def index():
 
 @app.route("/api/news")
 def get_news():
-    data = load_data()
-    return jsonify(data)
+    return jsonify(load_data())
 
 
 @app.route("/api/news/<int:article_id>")
@@ -32,5 +35,18 @@ def get_article(article_id):
     return jsonify(article)
 
 
+@app.route("/api/refresh", methods=["POST"])
+def refresh():
+    update_news_data()
+    return jsonify({"status": "ok", "updated_at": load_data().get("updated_at")})
+
+
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(update_news_data, "interval", hours=6, id="news_update")
+    scheduler.start()
+    update_news_data()
+    try:
+        app.run(debug=False, port=5000)
+    finally:
+        scheduler.shutdown()
