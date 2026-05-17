@@ -363,21 +363,26 @@ body {
 }
 
 /* ── Supply Chain Layout ── */
+/* Height is handled by body flex in supply_chain.html */
 .sc-layout {
   display: flex;
-  height: calc(100vh - 108px);
   overflow: hidden;
+  flex: 1;
+  min-height: 0;
 }
 
+/* Sidebar: three stacked sections — top (fixed), list (flex), detail (auto) */
 .sc-sidebar {
-  width: 260px;
-  min-width: 220px;
+  width: 300px;
+  min-width: 260px;
   border-right: 1px solid var(--gray-200);
   background: #fff;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
+.sc-sidebar-top { flex: 0 0 auto; }
 
 .sc-search-wrap { padding: 12px 12px 8px; }
 
@@ -412,10 +417,12 @@ body {
 .sc-chip:hover { border-color: var(--accent); color: var(--accent); }
 .sc-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
+/* Company list: grows, scrollable */
 .sc-company-list {
   list-style: none;
-  overflow-y: auto;
   flex: 1;
+  min-height: 0;
+  overflow-y: auto;
   padding: 4px 0;
 }
 
@@ -434,29 +441,32 @@ body {
   border-left-color: var(--accent);
 }
 
-.cl-name { font-size: .88rem; font-weight: 600; color: var(--gray-900); flex: 1; }
+.cl-name   { font-size: .88rem; font-weight: 600; color: var(--gray-900); flex: 1; }
 .cl-ticker { font-size: .72rem; font-family: monospace; color: var(--gray-500); }
-.cl-flag { font-size: .9rem; }
+.cl-flag   { font-size: .9rem; }
 
-/* Graph + detail */
+/* Detail panel: inside sidebar, below company list */
+.sc-detail {
+  flex: 0 0 auto;
+  border-top: 2px solid var(--accent);
+  background: #fff;
+  padding: 14px 16px;
+  max-height: 48%;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* Graph: full height */
 .sc-content {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 
 #sc-graph {
-  flex: 1;
+  width: 100%;
+  height: 100%;
   background: var(--gray-50);
-}
-
-.sc-detail {
-  border-top: 1px solid var(--gray-200);
-  background: #fff;
-  padding: 16px 24px;
-  max-height: 280px;
-  overflow-y: auto;
 }
 
 .sc-detail-header {

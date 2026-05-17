@@ -6,6 +6,12 @@
   <title>台灣科技股 · 供應鏈地圖</title>
   <link rel="stylesheet" href="/static/css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+  <style>
+    /* Make body a column so sc-layout fills remaining height without hardcoding px */
+    body { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+    .header, .stats-bar { flex: 0 0 auto; }
+    .sc-layout { flex: 1; min-height: 0; }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -42,25 +48,24 @@
   </div>
 
   <div class="sc-layout">
-    <!-- Left: company list -->
+    <!-- Left sidebar: search + list + detail panel -->
     <aside class="sc-sidebar">
-      <div class="sc-search-wrap">
-        <input class="sc-search" id="sc-search" type="text" placeholder="搜尋公司…" />
+      <div class="sc-sidebar-top">
+        <div class="sc-search-wrap">
+          <input class="sc-search" id="sc-search" type="text" placeholder="搜尋公司…" />
+        </div>
+        <div class="sc-filter-row" id="country-filters">
+          <button class="sc-chip active" data-country="all">全部</button>
+          <button class="sc-chip" data-country="TW">台灣</button>
+          <button class="sc-chip" data-country="US">美國</button>
+          <button class="sc-chip" data-country="KR">韓國</button>
+          <button class="sc-chip" data-country="NL">荷蘭</button>
+        </div>
       </div>
-      <div class="sc-filter-row" id="country-filters">
-        <button class="sc-chip active" data-country="all">全部</button>
-        <button class="sc-chip" data-country="TW">台灣</button>
-        <button class="sc-chip" data-country="US">美國</button>
-        <button class="sc-chip" data-country="KR">韓國</button>
-        <button class="sc-chip" data-country="NL">荷蘭</button>
-      </div>
+
       <ul class="sc-company-list" id="company-list"></ul>
-    </aside>
 
-    <!-- Right: graph + detail panel -->
-    <div class="sc-content">
-      <div id="sc-graph"></div>
-
+      <!-- Detail panel: inside sidebar, visible when a node is selected -->
       <div class="sc-detail" id="sc-detail" style="display:none">
         <div class="sc-detail-header">
           <div>
@@ -82,6 +87,11 @@
           </div>
         </div>
       </div>
+    </aside>
+
+    <!-- Right: full-height graph -->
+    <div class="sc-content">
+      <div id="sc-graph"></div>
     </div>
   </div>
 
