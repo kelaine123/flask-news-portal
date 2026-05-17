@@ -1,14 +1,21 @@
+import atexit
 import json
 import os
 from flask import Flask, render_template, jsonify, abort
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
-from fetcher import update_news_data
+from services.fetcher import update_news_data
 
 load_dotenv()
 
 app = Flask(__name__)
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data", "news.json")
+
+# Start scheduler at module level so it works with both `python app.py` and `flask run`
+_scheduler = BackgroundScheduler()
+_scheduler.add_job(update_news_data, "interval", hours=6, id="news_update")
+_scheduler.start()
+atexit.register(lambda: _scheduler.shutdown(wait=False))
 
 
 def load_data():
@@ -42,11 +49,5 @@ def refresh():
 
 
 if __name__ == "__main__":
-    scheduler = BackgroundScheduler()
-    scheduler.add_job(update_news_data, "interval", hours=6, id="news_update")
-    scheduler.start()
     update_news_data()
-    try:
-        app.run(debug=False, port=5000)
-    finally:
-        scheduler.shutdown()
+    app.run(debug=False, port=5000)
