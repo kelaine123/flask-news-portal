@@ -456,16 +456,18 @@ body {
   overflow-y: auto;
 }
 
-/* Graph: full height */
+/* Graph: full height — vis-network needs a pixel-defined container,
+   so use position:absolute inset:0 to fill the relatively-positioned parent */
 .sc-content {
   flex: 1;
+  min-height: 0;
   overflow: hidden;
   position: relative;
 }
 
 #sc-graph {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0;
   background: var(--gray-50);
 }
 
