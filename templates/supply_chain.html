@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>台灣科技股 · 供應鏈地圖</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">台灣科技股 <em>新聞分析</em></span>
+      </div>
+      <nav class="nav">
+        <a href="/" class="nav-link">新聞概覽</a>
+        <a href="/supply-chain" class="nav-link active">供應鏈地圖</a>
+        <a href="#" class="nav-link disabled">個股分析</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-label">台灣公司</span>
+      <span class="stat-value" id="stat-tw">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">追蹤企業</span>
+      <span class="stat-value" id="stat-companies">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">供應關係</span>
+      <span class="stat-value" id="stat-rels">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">點選節點</span>
+      <span class="stat-value" style="font-size:.85rem;color:#93c5fd">查看上下游</span>
+    </div>
+  </div>
+
+  <div class="sc-layout">
+    <!-- Left: company list -->
+    <aside class="sc-sidebar">
+      <div class="sc-search-wrap">
+        <input class="sc-search" id="sc-search" type="text" placeholder="搜尋公司…" />
+      </div>
+      <div class="sc-filter-row" id="country-filters">
+        <button class="sc-chip active" data-country="all">全部</button>
+        <button class="sc-chip" data-country="TW">台灣</button>
+        <button class="sc-chip" data-country="US">美國</button>
+        <button class="sc-chip" data-country="KR">韓國</button>
+        <button class="sc-chip" data-country="NL">荷蘭</button>
+      </div>
+      <ul class="sc-company-list" id="company-list"></ul>
+    </aside>
+
+    <!-- Right: graph + detail panel -->
+    <div class="sc-content">
+      <div id="sc-graph"></div>
+
+      <div class="sc-detail" id="sc-detail" style="display:none">
+        <div class="sc-detail-header">
+          <div>
+            <span class="sc-detail-name" id="detail-name"></span>
+            <span class="sc-detail-ticker" id="detail-ticker"></span>
+            <span class="sc-detail-badge" id="detail-category"></span>
+            <span class="sc-detail-country" id="detail-country"></span>
+          </div>
+          <button class="sc-detail-close" id="detail-close">✕</button>
+        </div>
+        <div class="sc-streams">
+          <div class="sc-stream">
+            <div class="sc-stream-title upstream-title">↑ 上游供應商</div>
+            <ul id="detail-upstream"></ul>
+          </div>
+          <div class="sc-stream">
+            <div class="sc-stream-title downstream-title">↓ 下游客戶</div>
+            <ul id="detail-downstream"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/supply_chain.js"></script>
+</body>
+</html>
