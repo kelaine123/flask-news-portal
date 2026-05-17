@@ -1,19 +1,20 @@
 import atexit
-import json
 import os
+from datetime import datetime, timezone
 from flask import Flask, render_template, jsonify, abort
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
-from services.fetcher import update_news_data
-from services.supply_chain import init_db, get_all_companies, get_company, get_graph_data, get_stats
+from services.fetcher import update_news_data, run_historical_backfill
+from services.supply_chain import (
+    init_db, get_all_companies, get_company, get_graph_data, get_stats,
+    get_articles, get_article_by_id,
+)
 from services.company_seeder import run_seeder
 
 load_dotenv()
 
 app = Flask(__name__)
-DATA_FILE = os.path.join(os.path.dirname(__file__), "data", "news.json")
 
-# Init supply chain DB on startup
 init_db()
 
 # Scheduler at module level — works with both `python app.py` and `flask run`
@@ -21,11 +22,6 @@ _scheduler = BackgroundScheduler()
 _scheduler.add_job(update_news_data, "interval", hours=6, id="news_update")
 _scheduler.start()
 atexit.register(lambda: _scheduler.shutdown(wait=False))
-
-
-def load_news():
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 
 # ── News routes ──────────────────────────────────────────────────────────────
@@ -37,13 +33,16 @@ def index():
 
 @app.route("/api/news")
 def get_news():
-    return jsonify(load_news())
+    articles = get_articles(limit=300)
+    return jsonify({
+        "articles": articles,
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    })
 
 
 @app.route("/api/news/<int:article_id>")
 def get_article(article_id):
-    data = load_news()
-    article = next((a for a in data["articles"] if a["id"] == article_id), None)
+    article = get_article_by_id(article_id)
     if article is None:
         abort(404)
     return jsonify(article)
@@ -52,7 +51,13 @@ def get_article(article_id):
 @app.route("/api/refresh", methods=["POST"])
 def refresh():
     update_news_data()
-    return jsonify({"status": "ok", "updated_at": load_news().get("updated_at")})
+    return jsonify({"status": "ok", "updated_at": datetime.now(timezone.utc).isoformat()})
+
+
+@app.route("/api/news/backfill", methods=["POST"])
+def news_backfill():
+    count = run_historical_backfill(months=6)
+    return jsonify({"status": "ok", "articles_saved": count})
 
 
 # ── Supply chain routes ───────────────────────────────────────────────────────

@@ -63,7 +63,7 @@ def _get_model():
 def _extract_batch(articles, company_names):
     model = _get_model()
     if not model:
-        return []
+        return [], False
 
     articles_text = "\n\n".join(
         f"[{i + 1}] 標題: {a.get('title', '')}\n"

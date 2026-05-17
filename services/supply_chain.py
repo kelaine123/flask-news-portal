@@ -1,4 +1,5 @@
 import sqlite3
+import json
 import os
 from contextlib import contextmanager
 
@@ -133,6 +134,21 @@ def init_db():
             CREATE TABLE IF NOT EXISTS processed_articles (
                 article_id  TEXT PRIMARY KEY,
                 processed_at TEXT DEFAULT (datetime('now'))
+            );
+            CREATE TABLE IF NOT EXISTS articles (
+                id          INTEGER PRIMARY KEY,
+                title       TEXT NOT NULL,
+                company     TEXT,
+                ticker      TEXT,
+                date        TEXT,
+                category    TEXT,
+                summary     TEXT,
+                sentiment   TEXT,
+                tags        TEXT DEFAULT '[]',
+                source      TEXT,
+                url         TEXT,
+                created_at  TEXT DEFAULT (datetime('now')),
+                UNIQUE(title)
             );
         """)
         if conn.execute("SELECT COUNT(*) FROM companies").fetchone()[0] == 0:
@@ -274,9 +290,64 @@ def mark_processed(article_ids):
         )
 
 
+def save_articles(articles):
+    """Insert articles; skip duplicates by id (URL-based) or title."""
+    with _db() as conn:
+        conn.executemany(
+            """INSERT OR IGNORE INTO articles
+               (id, title, company, ticker, date, category, summary, sentiment, tags, source, url)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+            [
+                (
+                    a["id"], a["title"], a.get("company"), a.get("ticker"),
+                    a.get("date"), a.get("category"), a.get("summary"),
+                    a.get("sentiment"), json.dumps(a.get("tags", [])),
+                    a.get("source"), a.get("url"),
+                )
+                for a in articles if a.get("title")
+            ],
+        )
+
+
+def get_articles(limit=200):
+    with _db() as conn:
+        rows = conn.execute(
+            "SELECT * FROM articles ORDER BY date DESC, created_at DESC LIMIT ?",
+            (limit,),
+        ).fetchall()
+        return [{**dict(r), "tags": json.loads(r["tags"] or "[]")} for r in rows]
+
+
+def get_article_by_id(article_id):
+    with _db() as conn:
+        row = conn.execute(
+            "SELECT * FROM articles WHERE id=?", (article_id,)
+        ).fetchone()
+        if not row:
+            return None
+        return {**dict(row), "tags": json.loads(row["tags"] or "[]")}
+
+
+def get_unprocessed_articles():
+    """Articles not yet sent to the LLM extractor."""
+    with _db() as conn:
+        processed = {
+            r[0] for r in conn.execute(
+                "SELECT article_id FROM processed_articles"
+            ).fetchall()
+        }
+        rows = conn.execute("SELECT * FROM articles").fetchall()
+        return [
+            {**dict(r), "tags": json.loads(r["tags"] or "[]")}
+            for r in rows
+            if str(dict(r)["id"]) not in processed
+        ]
+
+
 def get_stats():
     with _db() as conn:
         companies = conn.execute("SELECT COUNT(*) FROM companies").fetchone()[0]
         rels = conn.execute("SELECT COUNT(*) FROM relationships").fetchone()[0]
         tw = conn.execute("SELECT COUNT(*) FROM companies WHERE country='TW'").fetchone()[0]
-        return {"companies": companies, "relationships": rels, "tw_companies": tw}
+        articles = conn.execute("SELECT COUNT(*) FROM articles").fetchone()[0]
+        return {"companies": companies, "relationships": rels, "tw_companies": tw, "articles": articles}
