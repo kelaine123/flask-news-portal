@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>台灣科技股 · 新聞分析</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">台灣科技股 <em>新聞分析</em></span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link active">新聞概覽</a>
+        <a href="#" class="nav-link disabled">個股分析</a>
+        <a href="#" class="nav-link disabled">供需指標</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-label">文章總數</span>
+      <span class="stat-value" id="stat-total">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">正面訊號</span>
+      <span class="stat-value positive" id="stat-positive">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">負面訊號</span>
+      <span class="stat-value negative" id="stat-negative">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">中性</span>
+      <span class="stat-value neutral" id="stat-neutral">—</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">資料更新</span>
+      <span class="stat-value" id="stat-date">—</span>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="positive">正面</button>
+        <button class="filter-btn" data-filter="neutral">中性</button>
+        <button class="filter-btn" data-filter="negative">負面</button>
+      </div>
+      <div class="filter-group">
+        <select class="filter-select" id="category-filter">
+          <option value="all">所有類別</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- News Grid -->
+    <div class="news-grid" id="news-grid">
+      <div class="loading">載入中…</div>
+    </div>
+  </main>
+
+  <!-- Article Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
