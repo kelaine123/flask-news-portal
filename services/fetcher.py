@@ -7,7 +7,7 @@ import feedparser
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
-DATA_FILE = os.path.join(os.path.dirname(__file__), "data", "news.json")
+DATA_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "news.json")
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
 
 COMPANY_MAP = {
