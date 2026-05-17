@@ -195,9 +195,18 @@ def get_company(company_id):
 
 def get_graph_data():
     with _db() as conn:
-        companies = conn.execute("SELECT * FROM companies").fetchall()
         rels = conn.execute(
             "SELECT supplier_id, customer_id, product FROM relationships"
+        ).fetchall()
+
+        connected_ids = {r["supplier_id"] for r in rels} | {r["customer_id"] for r in rels}
+        if not connected_ids:
+            return {"nodes": [], "edges": []}
+
+        placeholders = ",".join("?" * len(connected_ids))
+        companies = conn.execute(
+            f"SELECT * FROM companies WHERE id IN ({placeholders})",
+            list(connected_ids),
         ).fetchall()
 
         return {

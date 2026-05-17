@@ -6,6 +6,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
 from services.fetcher import update_news_data
 from services.supply_chain import init_db, get_all_companies, get_company, get_graph_data, get_stats
+from services.company_seeder import run_seeder
 
 load_dotenv()
 
@@ -82,6 +83,12 @@ def supply_chain_company(company_id):
 @app.route("/api/supply-chain/stats")
 def supply_chain_stats():
     return jsonify(get_stats())
+
+
+@app.route("/api/supply-chain/seed-companies", methods=["POST"])
+def seed_companies():
+    result = run_seeder()
+    return jsonify(result)
 
 
 if __name__ == "__main__":
