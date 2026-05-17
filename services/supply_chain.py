@@ -130,6 +130,10 @@ def init_db():
                 updated_at  TEXT DEFAULT (date('now')),
                 UNIQUE(supplier_id, customer_id, product)
             );
+            CREATE TABLE IF NOT EXISTS processed_articles (
+                article_id  TEXT PRIMARY KEY,
+                processed_at TEXT DEFAULT (datetime('now'))
+            );
         """)
         if conn.execute("SELECT COUNT(*) FROM companies").fetchone()[0] == 0:
             _seed(conn)
@@ -212,6 +216,53 @@ def get_graph_data():
                 for r in rels
             ],
         }
+
+
+def add_relationship_if_new(supplier_name, customer_name, product):
+    """Find both companies in DB and insert relationship if it doesn't exist yet."""
+    with _db() as conn:
+        def find_id(name):
+            row = conn.execute("SELECT id FROM companies WHERE name = ?", (name,)).fetchone()
+            if row:
+                return row[0]
+            # Fallback: partial match (handles "SK Hynix" vs "SK hynix" etc.)
+            row = conn.execute(
+                "SELECT id FROM companies WHERE name LIKE ?", (f"%{name}%",)
+            ).fetchone()
+            return row[0] if row else None
+
+        sid = find_id(supplier_name)
+        cid = find_id(customer_name)
+        if not sid or not cid or sid == cid:
+            return False
+
+        exists = conn.execute(
+            "SELECT 1 FROM relationships WHERE supplier_id=? AND customer_id=?",
+            (sid, cid),
+        ).fetchone()
+        if not exists:
+            conn.execute(
+                "INSERT INTO relationships (supplier_id, customer_id, product) VALUES (?,?,?)",
+                (sid, cid, product),
+            )
+            return True
+        return False
+
+
+def get_processed_ids():
+    """Return set of article IDs already sent to the LLM extractor."""
+    with _db() as conn:
+        rows = conn.execute("SELECT article_id FROM processed_articles").fetchall()
+        return {r[0] for r in rows}
+
+
+def mark_processed(article_ids):
+    """Mark article IDs as processed so they are skipped on future runs."""
+    with _db() as conn:
+        conn.executemany(
+            "INSERT OR IGNORE INTO processed_articles (article_id) VALUES (?)",
+            [(str(aid),) for aid in article_ids],
+        )
 
 
 def get_stats():

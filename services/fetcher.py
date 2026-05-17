@@ -207,3 +207,10 @@ def update_news_data():
     os.replace(tmp, DATA_FILE)
 
     print(f"[{now}] Saved {len(articles)} articles.")
+
+    # Extract supply chain relationships from new articles via Gemini
+    try:
+        from services.extractor import extract_and_update
+        extract_and_update(articles)
+    except Exception as e:
+        print(f"[Extractor] Failed: {e}")
